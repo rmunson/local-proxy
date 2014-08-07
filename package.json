@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "description": "Real simple proxy for any machine.",
   "main": "index.js",
+  "bin" : "bin/local-proxy",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rmunson",
   "license": "?",
   "dependencies": {
-    "http-proxy": "~1.0.2"
+    "http-proxy": "~1.0.2",
+    "commander": "^2.3.0"
   }
 }

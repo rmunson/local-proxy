@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var cli = require('commander');
+
+	cli
+		.option('-p, --port <port number>',"proxy port (defaults to 8888)",8888)
+	    .option('-l, --log', "log proxied urls to the console")
+	    .parse(process.argv)
+// Start it up
+require('../index')(cli.port,cli.log)
